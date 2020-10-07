@@ -1,5 +1,8 @@
 <?php
 require('saveuser.php');
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,6 +42,13 @@ function checkPassword(form) {
 
 
 
+
+
+  
+
+
+
+
  <div class="control-group">
       <!-- Full name -->
       <label class="control-label"  for="fullname">Full Name</label>
@@ -53,7 +63,7 @@ function checkPassword(form) {
       <!-- Username -->
       <label class="control-label"  for="username">Username</label>
       <div class="controls">
-        <input type="text" id="username" name="username" onBlur="checkUsernameAvailability()"  pattern="^[a-zA-Z][a-zA-Z0-9-_.]{5,12}$" title="User must be alphanumeric without spaces 6 to 12 chars" class="input-xlarge" required>
+        <input type="text" id="username" name="username" onBlur="checkUsernameAvailability()"  pattern="^[a-zA-Z][a-zA-Z0-9-_.]{3,12}$" title="User must be alphanumeric without spaces 6 to 12 chars" class="input-xlarge" required>
             <span id="username-availability-status" style="font-size:12px;"></span> 
         <p class="help-block">Username can contain any letters or numbers, without spaces 6 to 12 chars </p>
       </div>
@@ -135,5 +145,8 @@ function checkPassword(form) {
 <script type="text/javascript">
 
 </script>
+
+
+?>
 </body>
 </html>

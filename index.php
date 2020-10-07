@@ -107,19 +107,20 @@ else {
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>PDO | Login form</title>
+    <title>Admin/Cashier Login form</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link href="main/csss/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main/css/DT_bootstrap.css">
+    <script src="main/jss/jquery.js"></script>
+    <script src="main/jss/bootstrap.js"></script>
 </head>
 <body>
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="main/css/font-awesome.min.css" rel="stylesheet">
 
     <div id="login-overlay" class="modal-dialog">
       <div class="modal-content">
           <div class="modal-header">
-              <h4 class="modal-title" id="myModalLabel">Login Form</h4>
+              <h4 class="modal-title" id="myModalLabel">Admin/Cashier Login Form</h4>
           </div>
           <div class="modal-body">
               <div class="row">
@@ -157,16 +158,10 @@ else {
                       </div>
                   </div>
                   <div class="col-xs-6">
-                      <p class="lead">Register now for <span class="text-success">FREE</span></p>
-                      <ul class="list-unstyled" style="line-height: 2">
-                          <li><span class="fa fa-check text-success"></span> Lorem ipsum dolor sit amet</li>
-                          <li><span class="fa fa-check text-success"></span>Lorem ipsum dolor sit amet</li>
-                          <li><span class="fa fa-check text-success"></span>Lorem ipsum dolor sit amet</li>
-                          <li><span class="fa fa-check text-success"></span>Lorem ipsum dolor sit amet</li>
-                          <li><span class="fa fa-check text-success"></span> Lorem ipsum dolor sit amet</li>
+                      
+  <img src="main/images/medicine.png" class="" style=" height: 270px ;  width: 270px;">
 
-                      </ul>
-                      <p><a href="signup.php" class="btn btn-info btn-block">Yes please, register now!</a></p>
+                      
                   </div>
               </div>
           </div>

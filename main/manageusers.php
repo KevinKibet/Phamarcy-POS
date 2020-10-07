@@ -195,8 +195,8 @@ window.onload=startclock;
 
 
 <a rel="facebox" href="adduser.php"><Button type="submit" class="btn btn-info" style="float:right; width:230px; height:35px;" /><i class="icon-plus-sign icon-large"></i> Add New User</button></a><br><br>
-<table class="hoverTable" id="resultTable" data-responsive="table" style="text-align: left;">
-	<thead>
+<table class="hoverTable table" id="resultTable" data-responsive="table" style="text-align: left;">
+	<thead >
 		<tr>
 			<th width="12%"> Full Name </th>
 			<th width="14%"> User Name </th>

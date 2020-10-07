@@ -55,11 +55,11 @@ function checkPassword(form) {
   
 </script>
 <body>
-<form class="form-horizontal" action='saveuser.php' method="post" onSubmit = "return checkPassword(this)">
+<form class="form-horizontal" action='saveedituser.php' method="post" onSubmit = "return checkPassword(this)">
   <fieldset>
     <div id="legend" style="padding-left:4%">
       <legend class="">Edit User | <a href="manageusers.php">Manage Users</a></legend>
-
+<input type="hidden" name="memi" value="<?php echo $id; ?>" />
  <div class="control-group">
       <!-- Full name -->
       <label class="control-label"  for="fullname" >Full Name</label>
@@ -141,7 +141,7 @@ function checkPassword(form) {
     <div class="control-group">
       <!-- Button -->
       <div class="controls">
-        <button class="  btn btn-success" type="submit" name="signup">Edit User </button>
+        <button class="  btn btn-success" type="submit" >Edit User </button>
 
       </div>
     </div>
