@@ -110,9 +110,16 @@ else {
     <title>Admin/Cashier Login form</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="main/csss/bootstrap.css" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="main/css/DT_bootstrap.css">
     <script src="main/jss/jquery.js"></script>
     <script src="main/jss/bootstrap.js"></script>
+    <style type="text/css">
+      
+      body {
+        background-image: url('main/images/pills.jpg');
+      }
+    </style>
 </head>
 <body>
 <link href="main/css/font-awesome.min.css" rel="stylesheet">
@@ -159,7 +166,7 @@ else {
                   </div>
                   <div class="col-xs-6">
                       
-  <img src="main/images/medicine.png" class="" style=" height: 270px ;  width: 270px;">
+  <img src="main/images/medicine.png" class="" style=" height: 270px ;  width: 270px; position: absolute; right: 22px; top: 8px;">
 
                       
                   </div>

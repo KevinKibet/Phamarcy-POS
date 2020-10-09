@@ -5,7 +5,12 @@ POS
 </title>
 
 <?php 
-require_once('auth.php');
+
+
+	require_once('auth.php');
+	require_once('auth1.php');
+
+
 ?>
  <link href="css/bootstrap.css" rel="stylesheet">
 

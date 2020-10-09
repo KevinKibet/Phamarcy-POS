@@ -60,12 +60,15 @@ elseif (empty($error_array)) {
 //{
 //$error="Username or Email-id already exist. Please try again";
 }
-//elseif ($queryt -> rowCount() > 0) {
-	//$message = "Email already exist";
-	//echo "<script type='text/javascript'>alert('$message');</script>";
-	//header("Location:manageusers.php");
-	//exit();
+elseif ($queryt -> rowCount() > 0) {
+	$message = "Email or Username already exist. Please Try Again! ";
+	echo "<script type='text/javascript'>alert('$message') ;
 
-//}
+     window.location = 'manageusers.php';
+	</script>";
+	//header("Location:manageusers.php");
+	exit();
+
+}
 }
 ?>

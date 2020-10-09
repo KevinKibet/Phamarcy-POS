@@ -126,7 +126,7 @@ if($position=='admin') {
           <div class="well sidebar-nav">
               <ul class="nav nav-list">
               <li><a href="index.php"><i class="icon-dashboard icon-2x"></i> Dashboard </a></li> 
-			<li class="active"><a href="sales.php?id=cash&invoice=<?php echo $finalcode ?>"><i class="icon-shopping-cart icon-2x"></i> Sales</a>  </li>             
+			<li class="active"><a href="salescashier.php?id=cash&invoice=<?php echo $finalcode ?>"><i class="icon-shopping-cart icon-2x"></i> Sales</a>  </li>             
 			                                    </li>
 			<li><a href="salesreportcashier.php?d1=0&d2=0"><i class="icon-bar-chart icon-2x"></i> Sales Report</a>                </li>
 			<br><br><br><br><br><br>

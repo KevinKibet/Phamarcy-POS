@@ -7,6 +7,7 @@ POS
 
 <?php 
 require_once('auth.php');
+require_once('auth1.php');
 ?>
  <link href="css/bootstrap.css" rel="stylesheet">
 
@@ -246,7 +247,7 @@ window.onload=startclock;
 			
 			
 			<td><a rel="facebox" title="Click to edit the User" href="edituser.php?id=<?php echo $row['id']; ?>"><button class="btn btn-warning"><i class="icon-edit"></i> </button> </a>
-			<a href="#" id="<?php echo $row['product_id']; ?>" class="delbutton" title="Click to Delete User"><button class="btn btn-danger"><i class="icon-trash"></i></button></a></td>
+			<a href="#" id="<?php echo $row['id']; ?>" class="delbutton" title="Click to Delete User"><button class="btn btn-danger"><i class="icon-trash"></i></button></a></td>
 			</tr>
 			<?php
 				}
@@ -276,12 +277,12 @@ var del_id = element.attr("id");
 
 //Built a url to send
 var info = 'id=' + del_id;
- if(confirm("Sure you want to delete this Product? There is NO undo!"))
+ if(confirm("Sure you want to delete this User? "))
 		  {
 
  $.ajax({
    type: "GET",
-   url: "deleteproduct.php",
+   url: "deleteuser.php",
    data: info,
    success: function(){
    

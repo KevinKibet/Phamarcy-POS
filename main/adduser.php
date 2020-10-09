@@ -147,6 +147,6 @@ function checkPassword(form) {
 </script>
 
 
-?>
+
 </body>
 </html>

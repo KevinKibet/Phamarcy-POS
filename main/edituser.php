@@ -74,7 +74,7 @@ function checkPassword(form) {
       <!-- Username -->
       <label class="control-label"  for="username">Username</label>
       <div class="controls">
-        <input type="text"  value = "<?php echo $row['UserName']?>" id="username" name="username" onBlur="checkUsernameAvailability()"  pattern="^[a-zA-Z][a-zA-Z0-9-_.]{5,12}$" title="User must be alphanumeric without spaces 6 to 12 chars" class="input-xlarge" required>
+        <input type="text"  value = "<?php echo $row['UserName']?>" id="username" name="username" onBlur="checkUsernameAvailability()"  pattern="^[a-zA-Z][a-zA-Z0-9-_.]{3,12}$" title="User must be alphanumeric without spaces 6 to 12 chars" class="input-xlarge" required>
             <span id="username-availability-status" style="font-size:12px;"></span> 
         <p class="help-block">Username can contain any letters or numbers, without spaces 6 to 12 chars </p>
       </div>
