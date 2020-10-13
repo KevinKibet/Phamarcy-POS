@@ -181,7 +181,7 @@ window.onload=startclock;
 			
 			<?php 
 			include('../connect.php');
-				$result = $dbh->prepare("SELECT * FROM users");
+				$result = $dbh->prepare("SELECT * FROM userdata");
 				$result->execute();
 				$rowcount123 = $result->rowcount();
 

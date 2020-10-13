@@ -153,7 +153,7 @@ Sales Report from&nbsp;<?php echo $_GET['d1'] ?>&nbsp;to&nbsp;<?php echo $_GET['
 			<th width="20%"> Customer Name </th>
 			<th width="16%"> Invoice Number </th>
 			<th width="18%"> Amount </th>
-			<th width="13%"> Profit </th>
+			<!--<th width="13%"> Profit </th>-->
 		</tr>
 	</thead>
 	<tbody>
@@ -177,10 +177,10 @@ Sales Report from&nbsp;<?php echo $_GET['d1'] ?>&nbsp;to&nbsp;<?php echo $_GET['
 			$dsdsd=$row['amount'];
 			echo formatMoney($dsdsd, true);
 			?></td>
-			<td><?php
+		<!--	<td><?php
 			$zxc=$row['profit'];
 			echo formatMoney($zxc, true);
-			?></td>
+			?></td>-->
 			</tr>
 			<?php
 				}
@@ -218,7 +218,7 @@ Sales Report from&nbsp;<?php echo $_GET['d1'] ?>&nbsp;to&nbsp;<?php echo $_GET['
 				}
 				?>
 			</th>
-				<th colspan="1" style="border-top:1px solid #999999">
+			<!--	<th colspan="1" style="border-top:1px solid #999999">-->
 			<?php 
 				$resultia = $dbh->prepare("SELECT sum(profit) FROM sales WHERE date BETWEEN :c AND :d");
 				$resultia->bindParam(':c', $d1);
@@ -226,7 +226,7 @@ Sales Report from&nbsp;<?php echo $_GET['d1'] ?>&nbsp;to&nbsp;<?php echo $_GET['
 				$resultia->execute();
 				for($i=0; $cxz = $resultia->fetch(); $i++){
 				$zxc=$cxz['sum(profit)'];
-				echo formatMoney($zxc, true);
+				//echo formatMoney($zxc, true);
 				}
 				?>
 		
